@@ -1,0 +1,19 @@
+---
+import Header from '../components/Header.svelte'
+---
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="generator" content={Astro.generator} />
+    <title>Course feedbacks</title>
+  </head>
+  <body>
+    <Header client:only={"svelte"} />
+    <div>
+      <slot />
+    </div>
+  </body>
+</html>
